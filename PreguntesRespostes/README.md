@@ -12,7 +12,11 @@ El programa ha de fer el següent:
 - Manté un recompte de la puntuació total de l'usuari.
 - Repeteix el procés fins que l'usuari decideixi finalitzar el joc.
 
-**Com fer un número aleatori?: crearem una variable anomenada seed i farem que tingui el valor que vulguis, llavors en el punt on vulguis fer servir un número aleatori farem el següent codi.*
+---
+
+**Com fer un número aleatori?:*
+
+*crearem una variable anomenada seed i farem que tingui el valor que vulguis, llavors en el punt on vulguis fer servir un número aleatori farem el següent codi.*
 ```
 seed = (seed * 997) % 1000
 random = (seed * 503) % 1000 / 100
