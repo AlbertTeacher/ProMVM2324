@@ -1,6 +1,6 @@
 # Frase amb mes As
 
-Feu un programa anomenat FraseAmbMesAs que vagi llegint frases pel teclat i, en acabar cada entrada d’una frase, mostri quina és la frase que s’ha escrit fins al moment amb més lletres ‘a’ (minúscula o majúscula) i quantes en tenia.
+Feu un programa anomenat **FraseAmbMesAs** que vagi llegint frases pel teclat i, en acabar cada entrada d’una frase, mostri quina és la frase que s’ha escrit fins al moment amb més lletres ‘a’ (minúscula o majúscula) i quantes en tenia.
 
 El programa ha d’anar-se executant fins a llegir la frase “fi”.
 
