@@ -2,12 +2,33 @@
 temperatures = []
 dia = 1
 mes = 1
+fi = False
+
+def inici():
+    while not fi:
+        mostrar_menu()
+        tractar_opcio()
 
 def mostrar_menu():
-    ...
+    print("Benvingut al registre de temperatures")
+    print("-------------------------------------")
+    print("[RT] Registrar temperatures setmanals.")
+    print("[MJ] Consultar temperatures setmanals.")
+    print("[DF] Consultar temperatura mitjana.")
+    print("[FI] Sortir.")
 
 def tractar_opcio():
-    ...
+    opcio = input("Opcio: ")
+    if opcio.casefold() == "RT".casefold():
+        resgistre_temperatures_setmanas()
+    elif opcio.casefold() == "MJ".casefold():
+        mostrar_mitjana()
+    elif opcio.casefold() == "DF".casefold():
+        mostrar_diferencia()
+    elif opcio.casefold() == "FI".casefold():
+        finalitzar_execucio()
+    else:
+        print("Opcio incorrecta!")
 
 def resgistre_temperatures_setmanas():
     if len(temperatures) >= (52 * 7):
@@ -17,13 +38,26 @@ def resgistre_temperatures_setmanas():
         incrementar_data()
         
 def mostrar_mitjana():
-    ...
+    if len(temperatures) > 0:
+        mitjana = calcular_mitjana()
+        print("Fins avui", end=" ")
+        mostrar_data()
+        print("la mitjana ha estat de", mitjana, "graus.")
+    else:
+        print("No hi ha temperatures registrades.")
 
 def mostrar_diferencia():
-    ...
+    if len(temperatures) > 0:
+        diferencia = calcula_diferencia()
+        print("Fins avui", end=" ")
+        mostrar_data()
+        print("la diferencia maxima ha estat de", diferencia, "graus.")
+    else:
+        print("No hi ha temperatures registrades.")
 
 def finalitzar_execucio():
-    ...
+    global fi
+    fi = True
 
 def llegir_temperatures_teclat():
     lector = input("Escriu les temperatures d'aquesta setmana: ")
@@ -76,6 +110,7 @@ def mostrar_data():
         print("Desembre")
 
 def incrementar_data():
+    global mes, dia
     diesAquestMes = 0
 
     if mes == 2:
@@ -93,3 +128,5 @@ def incrementar_data():
 
         if mes > 12:
             mes = 1
+
+inici()
