@@ -7,10 +7,11 @@ def inici():
     while not fi:
         processar_frase()
         mostrar_resultat_actual()
+    print("(El programa acaba)")
 
 def processar_frase():
     global frase_actual, fi
-    frase_actual = input('Escriu una frase:\n')
+    frase_actual = input('Escriu una frase:\n> ')
     if frase_actual == 'fi':
         fi = True
     else:
