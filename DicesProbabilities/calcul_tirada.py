@@ -36,4 +36,7 @@ def mostrar_probabilitat(valor: int) -> None:
     acumulador: int = 0
 
     for i in range(valor):
-        ...
+        acumulador += llista_tirades[i]
+    resultat: float = (acumulador * 100) / (CARES_DAU * CARES_DAU)
+
+    print("La probabilitat es", resultat, "%.")
