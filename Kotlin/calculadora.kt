@@ -6,12 +6,15 @@ fun leerNumero(): Int {
     return 7
 }
 
-fun sumar(primerNumero: Int, segundoNumero: Int) {
-    val resultado: Int = primerNumero + segundoNumero
+fun sumar(primerNumero: Int, segundoNumero: Int): Int {
+	var resultado: Int = 0
 
-    println(resultado)
+	resultado = primerNumero
+
+	return resultado
 }
 
+/**
 fun resta(primerNumero: Int, segundoNumero: Int) {
     val resultado: Int = primerNumero - segundoNumero
 
@@ -63,19 +66,31 @@ fun usandoSWITHCASE(operacion: String, primerNumero: Int, segundoNumero: Int) {
         }
     }
 }
+*/
 
 fun main() {
    // Debemos leer que operacion hacer
    val operacion: String = leerOperacion()
+
    // Debemos leer cual es el primer numero
    val primerNumero: Int = leerNumero()
+
    // Debemos leer cual es el segundo numero
    val segundoNumero: Int = leerNumero()
+
    // Deberiamos tener un selector que escoja la operacion a invocar
    /*
     * Tenemos dos opciones hacer un grupo de if / else
     * O podriamos hacer un switch
     */
-    usandoIFELSE(operacion, primerNumero, segundoNumero)
-    usandoSWITHCASE(operacion, primerNumero, segundoNumero)
+		print("Operacion: ")
+    println(operacion)
+		print("Primer numero: ")
+    println(primerNumero)
+		print("Segundo numero: ")
+    println(segundoNumero)
+    val resultado = sumar(8, 9)
+    //usandoIFELSE(operacion, primerNumero, segundoNumero)
+    //usandoSWITHCASE(operacion, primerNumero, segundoNumero)
+	println(resultado)
 }
