@@ -6,7 +6,7 @@ Descompon aquest codi en funcions més petites per millorar la seva modularitat 
 
 Codi Python:
 
-'''
+```
 # Coordenada inicial
 coordenada = (0, 0)
 
@@ -37,4 +37,4 @@ print(f"Nova coordenada després de moure a la dreta: {coordenada}")
 
 coordenada = moure_amunt(coordenada)
 print(f"Nova coordenada després de moure amunt: {coordenada}")
-'''
+```
