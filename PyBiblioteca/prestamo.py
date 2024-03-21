@@ -7,10 +7,12 @@ class Prestamo:
         self.socio = socio
 
     def registrar_prestamo(self, fecha: str):
-        print(f"Prestamo registrado: Libro {self.libro.titulo}, Socio {self.socio.nombre}, Fecha: {self.fecha}")
+        self.socio.solicitar_prestamo(fecha)
+        print(f"Prestamo registrado: Libro {self.libro.titulo}, Socio {self.socio.nombre}, Fecha: {fecha}")
         self.libro.prestar()
 
     def devolver_prestamo(self):
+        self.socio.devolver_prestamo()
         print(f"Devolucion de Prestamo: Libro {self.libro.titulo}, Socio {self.socio.nombre}")
         self.libro.devolver()
 
