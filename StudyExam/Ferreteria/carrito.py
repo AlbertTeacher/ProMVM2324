@@ -21,7 +21,7 @@ class Carrito:
     def decrement_product(self, product: str) -> None:
         if product in self.carrito.keys():
             self.carrito[product] -= 1
-            if self.carrit[product] =< 0:
+            if self.carrit[product] <= 0:
                 self.delete_line(product)
     def delete_line(self, product: str) -> None:
         if product in self.carrito.keys():
