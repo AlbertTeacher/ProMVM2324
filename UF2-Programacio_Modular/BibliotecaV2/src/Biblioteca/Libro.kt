@@ -1,0 +1,4 @@
+package Biblioteca
+
+class Libro {
+}

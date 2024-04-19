@@ -1,3 +1,5 @@
+package Biblioteca 
+
 class Prestamo(val libro: Libro, val socio: Socio)
 {
     fun registrarPrestamo(fechaPrestamo: String) {

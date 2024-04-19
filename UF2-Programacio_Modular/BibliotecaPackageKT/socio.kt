@@ -1,4 +1,5 @@
 package Biblioteca
+
 class Socio(val nombre: String, val apellido: String, val numeroSocio: Int) {
 
     fun solicitarPrestamo(libro: Libro, fechaPrestamo: String) {
