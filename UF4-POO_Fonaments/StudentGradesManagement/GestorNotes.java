@@ -1,6 +1,8 @@
+import java.util.Hashtable;
+
 public class GestorNotes
 {
-    Dictionary<String, double[]> alumnes = new Dictionary<String, double[]>();
+    Hashtable<String, double[]> alumnes = new Hashtable<String, double[]>();
 
     public void registrarNotes(String nomAlumne, double[] notes) {
         alumnes.put(nomAlumne, notes);
