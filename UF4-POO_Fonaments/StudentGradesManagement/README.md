@@ -9,7 +9,7 @@ Crea una classe anomenada `GestorNotes` amb els següents mètodes:
 - `obtenirNotes(String nomAlumne)`: Aquest mètode ha de permetre obtenir les notes d'un alumne registrades anteriorment. Ha de retornar un array de tipus double amb les notes de l'alumne.
 
 **Càlcul d'estadístiques:**  
-Crea una classe anomenada CalculadoraEstadistiques amb els següents mètodes:
+Crea una classe anomenada `CalculadoraEstadistiques` amb els següents mètodes:
 - `calcularMitjana(double[] notes)`: Aquest mètode ha de calcular la mitjana de les notes donades en l'array notes.
 - `calcularMaxim(double[] notes)`: Aquest mètode ha de calcular la nota màxima de les notes donades en l'array notes.
 - `calcularMinim(double[] notes)`: Aquest mètode ha de calcular la nota mínima de les notes donades en l'array notes.
