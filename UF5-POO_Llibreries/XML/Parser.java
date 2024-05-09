@@ -54,6 +54,8 @@ class Parser
             System.out.println("Articles a la venda: " + nreArticles);
         } catch (Exception ex) {
             System.out.println("Error en la lectura del document: " + ex);
+            //Aqui veiem com tot i que hem capturat l'exepcio la tornem a llencar i que sigui el metode que ens ha invocat
+            //qui s'encarregui de gestionar-ho
             throw ex;
         }
     }
