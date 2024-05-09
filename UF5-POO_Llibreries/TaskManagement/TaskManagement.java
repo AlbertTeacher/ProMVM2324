@@ -30,9 +30,7 @@ class TaskManagement
 
 	public void printAllTask() {
 		tasks.forEach((key, task) -> {
-			System.out.print(task.getId() + " ");
-			System.out.print(task.getName() + " ");
-			System.out.println(task.isDone());
+			System.out.println(task);
 		}
 		);
 	}
@@ -40,14 +38,12 @@ class TaskManagement
 	public void printTaskByPriority(String priority) {
 		System.out.println("Tareas de prioridad: " + priority);
 		for (Task task: lists.get(priority)) {
-			System.out.print(task.getId() + " ");
-			System.out.print(task.getName() + " ");
-			System.out.println(task.isDone());
+			System.out.println(task);
 		}
 	}
 }
 
-class Task
+class Task 
 {
 	private static int numInstances = 0;
 	private int id;
@@ -74,6 +70,10 @@ class Task
 
 	public boolean isDone() {
 		return this.isDone;
+	}
+
+	public String toString() {
+		return "Id:" + id.toString() + " Name: " + name + "Is done:" + isDone.toString();
 	}
 }
 
