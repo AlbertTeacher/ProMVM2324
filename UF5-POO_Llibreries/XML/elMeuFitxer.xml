@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LlistaProductes data="23/11/2011">
+    <Producte id="1" aLaVenda="true">
+        <Nom>Producte 1</Nom>
+        <Preu>10.0</Preu>
+        <Estoc>4</Estoc>
+    </Producte>
+    <Producte id="2" aLaVenda="true">
+        <Nom>Producte 2</Nom>
+        <Preu>15.0</Preu>
+        <Estoc>10</Estoc>
+    </Producte>
+    <Producte id="3" aLaVenda="false">
+        <Nom>Producte 3</Nom>
+        <Preu>25.0</Preu>
+        <Estoc>0</Estoc>
+    </Producte>
+</LlistaProductes>
