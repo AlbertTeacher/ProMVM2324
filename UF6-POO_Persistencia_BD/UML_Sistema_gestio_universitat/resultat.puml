@@ -1,0 +1,23 @@
+@startuml
+class Professor {
+  - nom: String
+  - departament: String
+  - cursos: List<Curs>
+}
+
+class Curs {
+  - nom: String
+  - codi: String
+  - professor: Professor
+  - estudiants: List<Estudiant>
+}
+
+class Estudiant {
+  - nom: String
+  - matricula: String
+}
+
+Professor "1" o-- "0..*" Curs : imparteix
+Curs "0..*" --> "1" Professor : és impartit per
+Curs "0..*" o-- "0..*" Estudiant : inscriu
+@enduml
