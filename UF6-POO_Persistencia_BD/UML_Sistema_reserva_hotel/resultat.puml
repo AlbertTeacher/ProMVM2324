@@ -1,0 +1,28 @@
+@startuml
+class Hotel {
+  - nom: String
+  - adreça: String
+  - habitacions: List<Habitacio>
+}
+
+class Habitacio {
+  - numero: int
+  - capacitat: int
+  - reserva: Reserva
+}
+
+class Reserva {
+  - dataInici: Date
+  - dataFi: Date
+  - client: Client
+}
+
+class Client {
+  - nom: String
+  - dni: String
+}
+
+Hotel "1" o-- "0..*" Habitacio : conté
+Habitacio "0..*" --> "0..1" Reserva : és reservada per
+Reserva "0..*" --> "1" Client : feta per
+@enduml
